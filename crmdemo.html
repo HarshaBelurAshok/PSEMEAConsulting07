@@ -116,7 +116,7 @@ let stateunique = JSON.stringify({ conversationid:currentConversationId,
 										                 interactiontype:currentInteractionType}) ;
 client.setEnvironment('mypurecloud.de');
 client.loginPKCEGrant(
-    'fdb24b12-1035-4c64-9851-fd48971416a6', redirectUri, {state: stateunique })
+    '068428ea-f6b7-4577-b081-0106bda88a82', redirectUri, {state: stateunique })
 
 .then(data => {
 console.log(data);
@@ -186,4 +186,5 @@ conversationsApi.getConversation(currentConversationId)
         </script>
     </body>
 </html>
+
 
